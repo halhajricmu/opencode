@@ -1,0 +1,15 @@
+{
+  "name": "opencode",
+  "image": "oven/bun:1.3",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["oven.bun-vscode", "dbaeumer.vscode-eslint"]
+    }
+  },
+  "postCreateCommand": "bun install",
+  "remoteUser": "root"
+}
